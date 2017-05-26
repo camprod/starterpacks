@@ -7,9 +7,10 @@
         "name": "public_ssh_key", 
         "required": true, 
         "secured": false, 
-        "type": "string"
+        "type": "string",
+	    "regex": "ssh-rsa AAAA[0-9A-Za-z+/]+[=]{0,3} ([^@]+@[^@]+)"
     }, 
-    {
+    {   
         "description": "SoftLayer datacenter where infrastructure resources will be deployed", 
         "hidden": false, 
         "immutable": false, 
